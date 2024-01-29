@@ -1,0 +1,333 @@
+ 
+*,*::after,::before {
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+}
+body{
+	background-color:#d5d3d397;
+	margin: 0px;
+	font-family: 'Rakkas', sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Barre de navigation*/
+nav {
+    width: 100vw;
+	height: 5vh;
+    margin: 0px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background-color: #fffbfbbf;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+	z-index: 3;
+}
+nav li{
+	margin-left: 30px;
+	color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+	list-style: none;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+}
+
+a{
+	color: hsl(196, 51%, 28%);
+	text-decoration: none;
+	transition: background-color 0,3s ease-in-out;
+}
+
+a:hover{
+	background-color:  white;
+}
+
+/* Style du header*/
+header{
+	max-width: 100vw;
+    height: 100vh;
+	background-image: url(images/jour.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header-title h1 {
+	margin-top: 300px;
+	font-size: 4rem;
+	background-color: #52a3dd49;
+	border:solid 5px #52a3ddf1;
+}
+
+h1 {
+	font-family: 'Rakkas', serif;
+    color: white;
+    background-color: rgba(199, 129, 166, 0.007);
+    background-size: cover ;
+}
+.header-title p {
+	font-size: 2em;
+}
+figure{
+	text-align: center;
+}
+section{
+    scroll-snap-align: start;
+	height: 100vh;
+	width: 100vw;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*Style des textes*/
+.text{
+	text-align: center;
+	font-size: 25px;
+	color: #52a3ddf1;
+	background-color: #fffbfbbf;
+	border-radius: 5px;
+	margin: 0;
+	padding: 0;
+	margin-top: -775px;
+	margin-left: 700px;
+	max-width: 600Px;
+	z-index: 2;
+}
+/*Style des si j'étais*/
+h2{
+	background-color: #fffbfbbf;
+	color: #52a3ddf1;
+	margin-top: 150px;
+    text-align: center;
+	padding-top: 50px;
+	position: sticky;
+}
+/* Analogie*/ 
+h3{
+	color: #52a3ddf1;
+	background-color: #fffbfbbf;
+	font-family: 'Bebas Neue', sans-serif; 
+	border-radius: 5px;
+	font-size: 3rem;
+	padding: 0;
+	top: 100px;
+	margin-left: 700px;
+	max-width: max-content;
+	z-index: 2;
+}
+/* Agrandissement des images au survol*/
+
+img:not(.bouton-haut){
+	margin: none;
+	transition: 1s;
+	width: 500px;
+	height: 500px;
+	border: black solid 2px;
+	z-index: 2;
+	margin-left: 50px;
+	margin-bottom: 300px;
+	position: relative;
+}
+
+img:hover {
+    height: 550px;
+	width: 550px;
+    padding: unset;
+    margin: none;
+    transition: 1s;
+}
+
+/*STYLE FORMULAIRE*/
+#et-vous {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f497;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#et-vous p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+	text-align: center;
+}
+
+form {
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inline {
+    display: flex;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#send{	
+	font-family: 'Rakkas', serif;
+	font-size: var(--font-size-5);
+	text-align: center;
+	background: white;
+}
+.box {
+    border: 1px solid;
+	border-radius: 5px;
+}
+.etoile{
+	color: red;
+}
+.obligatoires{
+color: #4e4f51f1;
+}
+/*Pop up des mentions légales*/
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	text-align: center;
+}
+  
+.popup p {
+	margin-bottom: 10px;
+}
+
+.popup button {
+	margin-top: 15px; 
+}
+
+footer{
+	padding: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.footer-container {
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  #mentionsLegalesBtn {
+	margin-top: 50px;
+}
+  
+/*Style de l'ouverture et de la fermeture des mentions légales*/
+.volet {
+	overflow: hidden;
+	cursor: pointer;
+	text-align: center;
+}
+
+.volet-invisible {
+	height: 3em;
+}
+
+/* Mentions légales*/
+#mentionsLegalesBtn{
+	font-family: 'Rakkas', serif;
+	font-size: var(--font-size-5);
+	background: var(--gray-0);
+	padding: var(--size-4) var(--size-8);
+	transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+	transition: transform 0.1s;
+	position: relative;
+	border: solid 1px;
+	color: #ffffff;
+}
+button:hover {
+	--y: -10;
+	--scale: 1.1;
+	--border-scale: 1;
+}
+#fermerPopupBtn{
+	font-family: 'Rakkas', serif;
+	font-size: var(--font-size-5);
+	background: var(--gray-0);
+}
+.bas{
+	background-image: url(images/nuit.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*#fermerPopupBtn{
+	border: 1px solid;
+	border-radius: 5px;
+}
+#mentionsLegalesBtn{
+	border: 1px solid;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 200px;
+	float: right;
+}*/
+
+/* Style du pop up des images
+.popup {
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: rgba(195, 158, 203, 0.8);
+	z-index: 100;
+}
+
+.popup img {
+	width: auto;
+	height: 220px;
+	
+}
+
+.popup-visible {
+	display: block;
+}
+
+.popup-invisible {
+	display: none;
+}
+
+.image-cliquable {
+	width: auto;
+	height: 200px;
+	
+}
+*/

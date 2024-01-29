@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+    <title> Portrait chinois </title>
+</head>
+
+<body>
+    <!--Barre de navigation-->
+    <nav>
+        <ul>
+            <li><a href="#top"> Si j'étais...</a></li>
+            <li><a href="#section0">OBJET</a></li>
+            <li><a href="#section1">FILM</a></li>
+            <li><a href="#section2">ANIMÉ</a></li>
+            <li><a href="#section3">ART<a></li>
+            <li><a href="#section4">MOUVEMENT ARTISTIQUE</a></li>
+            <li><a href="#section5">FLEUR</a></li>
+            <li><a href="#section6">ÉLÉMENT</a></li>
+            <li><a href="#et-vous">Et vous ?</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <header>
+            <div class="header-title">
+                <h1>Portrait chinois • Missie Laure</h1>
+               <a href="#section0"> <p class="accueil">Découvrez moi à travers ce portrait chinois </p></a>
+            </div>
+
+        </header>
+    </section>
+    <div class="liste-analogies">
+        <!--<section><h2>Si j’étais [une analogie], je serais [une valeur de l’analogie].</h2></section>-->
+    </div>
+
+    <!--Bouton pour remonter la page-->
+    <a class="bouton-haut" href="#top">
+        <img src="images/fleche-haut.png"
+            style="position: fixed; right:25px; bottom:50px;width: 30px;height: 30px;background-color: steelblue;">
+    </a>
+
+    <!--Création D'une analogie suite au formulaire-->
+    <div id="nouvelleAnalogie"></div>
+
+    <section class="bas">
+        <!--Création du formulaire-->
+        <footer class="footer-container">
+            <button id="mentionsLegalesBtn" class="volet volet-invisible" onclick="afficherPopup()">Mentions
+                Légales</button>
+            <!-- Contenu des mentions légales -->
+            <div id="mentionsLegalesPopup" class="popup" style="display: none;">
+                <p>
+                    Le site a été créé par Missie Laure, étudiante en BUT MMI (Métiers du Multimédias et de l'Internet)
+                    <br>Hébergeur : Université Gustave Eiffel
+                    <br>2 rue Albert Einstein - 77420 Champs-sur-Marne - Tél: 33(1).60.95.75.00 -
+                    <br>Encadrement par Gaëlle Charpentier, Philipe Gambette et Matthieu Berthet
+                    <br>Législation relative aux données à caractère personnel:
+                    Le formulaire permettant la création d’une analogie personnalisée recueille votre adresse de
+                    courriel et
+                    votre adresse IP. Pour toute question portant sur la collecte ou le traitement de vos données à
+                    caractère personnel par l’UPEM, vous pouvez saisir la personne responsable du traitement des données
+                    qui
+                    est : Philippe Gambette (philippe.gambette@univ-eiffel.fr) Les fichiers détenus par l'UPEM qui
+                    comportent des données à caractère personnel ne seront jamais transmises à des tiers et ne feront
+                    jamais
+                    l'objet d'une commercialisation.
+                    <br>©2024 Tous droits réservés par Laure Missie.
+                    <br>Merci à : Anastasia Gawryluk, Ramata Wagne et Gaël Grandval.
+                    <br>Crédits photos :
+                    <br>https://i.pinimg.com/736x/50/a9/a3/50a9a31d298874157957805dc797d2e9.jpg
+                    <br>https://fr.web.img4.acsta.net/medias/nmedia/18/82/95/90/19707950.jpg
+                    <br>https://www.grandspeintres.com/wp-content/uploads/2019/04/expressionnisme.jpeg
+                    <br>https://www.dancelife.com.au/wp-content/uploads/2022/06/282107078_1694808620934358_8955689354801767830_n.jpg
+                    <br>https://image.api.playstation.com/vulcan/ap/rnd/202309/2817/001971fa2fc21d37b7c0d3e9cb45b2a651252d455e90a764.png
+                    <br>https://www.carrementfleurs.com/fichier_article/images/Carrementfleurs_tulipes_blanches.jpg
+                    <br>https://braysports.fr/wp-content/uploads/2015/10/eau-d-une-piscine-10744188jpvni_1713-574x340.jpg
+                    <br>http://www.lepelican-journal.com/journal/illustrations/grandes/4164_747dd7a00ef7daa65798667933d45e66f3093689.jpg
+                    <br>https://e1.pxfuel.com/desktop-wallpaper/771/442/desktop-wallpaper-plant-high-definition-moon-moon-night.jpg
+                </p>
+                <button id="fermerPopupBtn" onclick="fermerPopup()">Fermer</button>
+        </footer>
+
+        <!--Formulaire-->
+        <div class="box-form" id="et-vous">
+            <p>À vous de jouer !</p>
+            <p class="obligatoires">Les champs marqués d'un * sont obligatoires.</p>
+            <form action="" method="post">
+                <label for="name">Votre prénom<span class="etoile">*</span> </label><input type="text" required id="name" placeholder="Jean"><br>
+                <label for="mail">Votre e-mail<span class="etoile">*</span> </label><input type="email" required id="mail"
+                    placeholder="exemple@gmail.com" />
+                <div class="inline"><br><br>
+                    <label for="analogie">Si j'étais,<span class="etoile">*</span> <input type="text" required id="analogie"
+                            placeholder="(exemple : un dessert)" /></label>
+                    <label for="valeurAnalogie">je serais<span class="etoile">*</span> <input type="text" required id="valeurAnalogie"
+                            placeholder="(exemple : le cheesecake)"></label>
+                </div>
+                <label for="photo">Votre image<span class="etoile">*</span> <input type="text" required id="photo"
+                        placeholder="Merci d'entrer une URL"></label>
+                <br>
+                <fieldset required class="box">
+                    Parce que<span class="etoile">*</span><br>
+                    <textarea class="detail" id="texte" name="explication" rows="13" cols="55" maxlength="500"
+                        placeholder="(exemple : parce que c'est le meilleur dessert du monde)   max. 500 caractères"></textarea>
+                </fieldset>
+
+                <input type="button" value="Envoyer" id="send">
+                <p id="confirmation"></p>
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+
+</html>
