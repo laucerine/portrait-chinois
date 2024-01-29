@@ -14,5 +14,4 @@ se situant en bas de page
 # Comment cela fonctionne ?
 Il suffit de scroller ou de cliquer sur un élément de la barre de navigation pour qu'une analogie s'affiche !
 
-[Lien vers le portrait chinois](https://etudiant.u-pem.fr/~laure.missie/portrait-chinois/)
-[Lien vers le document Opquast](https://docs.google.com/spreadsheets/d/1-MffumU3u5GFueMBB8QZVcBqyR6Mc3gl7NfM2qpFMCQ/edit?usp=sharing)
+[Lien vers le portrait chinois](https://laucerine.github.io/portrait-chinois/)
