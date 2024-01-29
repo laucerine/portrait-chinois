@@ -2,7 +2,7 @@
 Portrait chinois : Exercice réalisé dans le cadre d'une SAE en BUT MMI
 <h1 align="center">Portrait Chinois de Missie Laure</h1>
 <div align="center">
-<img src="[Logo Laure](images/Favicon.png)" width="100px">
+<img src="images/Favicon.png" width="100px">
 </div>
 
 <p>
